@@ -1,0 +1,16 @@
+.navbar {
+  width: 100%;
+  background: none;
+}
+@media (max-width: 768px) {
+  .navbar {
+    background: white;
+  }
+}
+
+#navbarWrapper {
+  width: 100%;
+  transition: background-color 1s ease 0s;
+}
+
+/*# sourceMappingURL=navbar.css.map */
