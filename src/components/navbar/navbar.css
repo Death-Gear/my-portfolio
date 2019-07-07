@@ -1,16 +1,38 @@
-.navbar {
-  width: 100%;
-  background: none;
-}
-@media (max-width: 768px) {
-  .navbar {
-    background: white;
-  }
-}
-
 #navbarWrapper {
   width: 100%;
   transition: background-color 1s ease 0s;
+  z-index: 100;
+}
+@media (max-width: 768px) {
+  #navbarWrapper {
+    background: #91857C;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  }
+}
+#navbarWrapper .navbar {
+  width: 100%;
+  background: none;
+}
+#navbarWrapper .nav-item {
+  padding: 0 0.5rem;
+}
+@media (max-width: 992px) {
+  #navbarWrapper .nav-item {
+    padding: 0 0.25rem;
+  }
+}
+@media (max-width: 768px) {
+  #navbarWrapper .nav-item {
+    padding: 0;
+  }
+}
+#navbarWrapper .nav-item .nav-link {
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  #navbarWrapper .nav-item .nav-link {
+    font-weight: normal;
+  }
 }
 
 /*# sourceMappingURL=navbar.css.map */

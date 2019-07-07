@@ -1,0 +1,19 @@
+#overviewWrapper #profile_pic {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+#overviewWrapper #profile_content {
+  width: 100%;
+  margin-top: 7rem;
+}
+#overviewWrapper #profile_content #intro {
+  margin-top: 60px;
+}
+@media (max-width: 768px) {
+  #overviewWrapper #profile_pic {
+    margin-top: 3rem;
+  }
+}
+
+/*# sourceMappingURL=overview.css.map */

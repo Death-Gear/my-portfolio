@@ -4,21 +4,24 @@ import $ from "jquery";
 
 class NavBar extends React.Component {
     componentDidMount() {
+        const navBarWrapper = $('#navbarWrapper');
         $(window).scroll(() => {
             if ($(window).scrollTop() > 50) {
-                $('#navbarWrapper').addClass('bg-white shadow');
+                navBarWrapper.addClass('bg-primary');
+                navBarWrapper.css("box-shadow", "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)");
             } else {
-                $('#navbarWrapper').removeClass('bg-white shadow');
+                navBarWrapper.removeClass('bg-primary shadow');
+                navBarWrapper.css("box-shadow", "none");
             }
         })
     }
 
     render() {
         return (
-            <div className="container-fluid fixed-top pl-5 pr-5" id="navbarWrapper">
+            <div className="container-fluid fixed-top" id="navbarWrapper">
                 <div className="row">
-                    <nav className="navbar navbar-expand-md navbar-light">
-                        <a href="#" className="navbar-brand text-primary" id="logo">
+                    <nav className="navbar navbar-expand-md navbar-dark">
+                        <a href="#" className="navbar-brand text-white" id="logo">
                             PORTFOLIO
                         </a>
 
@@ -33,19 +36,19 @@ class NavBar extends React.Component {
                              id="navbarSupportedContent">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link text-primary">Overview</a>
+                                    <a href="#" className="nav-link text-white text-uppercase">Overview</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link text-primary">Experience</a>
+                                    <a href="#" className="nav-link text-white text-uppercase">Experience</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link text-primary">Projects</a>
+                                    <a href="#" className="nav-link text-white text-uppercase">Projects</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link text-primary">Skills</a>
+                                    <a href="#" className="nav-link text-white text-uppercase">Skills</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link text-primary">Contact</a>
+                                    <a href="#" className="nav-link text-white text-uppercase">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -54,6 +57,6 @@ class NavBar extends React.Component {
             </div>
         )
     }
-};
+}
 
 export default NavBar;

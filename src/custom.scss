@@ -1,4 +1,24 @@
 // Override default variables before the import
+$squirrel: #91857C;
+$default: #999999;
+$limed_spruce: #36434d;
+$fruit_salad: #61a35e;
+$golden_grass: #df9326;
+$pomegranate: #f44336;
+$cararra: #edeee9;
+$jumbo: #84858a;
+$russett: #7a625a;
+
+
+
+
+
+$primary:       $squirrel;
+$secondary:     $default;
+$success:       $fruit_salad;
+$info:          $limed_spruce;
+$warning:       $golden_grass;
+$danger:        $pomegranate;
 
 
 // Import Bootstrap and its default variables

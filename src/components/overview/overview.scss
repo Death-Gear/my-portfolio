@@ -1,0 +1,23 @@
+#overviewWrapper {
+
+  #profile_pic{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #profile_content {
+    width: 100%;
+    margin-top: 7rem;
+
+    #intro {
+      margin-top: 60px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #profile_pic {
+      margin-top: 3rem;
+    }
+  }
+}
