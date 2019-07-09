@@ -16,9 +16,9 @@ class OverView extends React.Component {
                         <div className="row h-100 align-items-center">
                             <div className="col-12 text-center">
                                 <h1 className="font-weight-light text-heathered-gray">Get Amazing Things Done !!!</h1>
-                                <p className="lead text-white">Hi, I am Yeasir Afsar. I am a Software Engineer from Dhaka, Bangladesh. I love Web and Game Development</p>
-                                <button type="button" className="btn btn-success btn-lg px-5 mx-2">Hire Me !!!</button>
-                                <button type="button" className="btn btn-indigo btn-lg px-5 mx-2">Get My CV</button>
+                                <p className="lead text-white">Hi, I am Yeasir Afsar from Dhaka, Bangladesh<br/> I am a Software Engineer & I love Web and Game Development</p>
+                                <button type="button" className="btn btn-success btn-lg px-5 mx-2 my-2">Hire Me !!!</button>
+                                <button type="button" className="btn btn-indigo btn-lg px-5 mx-2 my-2">Get My CV</button>
                             </div>
                         </div>
                     </div>
