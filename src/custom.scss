@@ -1,25 +1,50 @@
 // Override default variables before the import
-$squirrel: #91857C;
-$default: #999999;
-$limed_spruce: #36434d;
-$fruit_salad: #61a35e;
-$golden_grass: #df9326;
+$thunder: #160b0f;
+$mid-gray: #69686c;
+$shuttle-gray: #556575;
+$heathered-gray: #bbb194;
+$woodsmoke: #131517;
+$goblin: #408442;
+$hot-toddy: #be740a;
 $pomegranate: #f44336;
-$cararra: #edeee9;
-$jumbo: #84858a;
-$russett: #7a625a;
+$default: #999999;
+$blue:    #007bff;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #17a2b8;
 
+$theme-colors: (
+        "thunder":          $thunder,
+        "mid-gray":         $mid-gray,
+        "shuttle-gray":     $shuttle-gray,
+        "heathered-gray":   $heathered-gray,
+        "woodsmoke":        $woodsmoke,
+        "default":          $default,
+        "blue":             $blue,
+        "indigo":           $indigo,
+        "purple":           $purple,
+        "pink":             $pink,
+        "red":              $red,
+        "orange":           $orange,
+        "yellow":           $yellow,
+        "green":            $green,
+        "teal":             $teal,
+        "cyan":             $cyan
+);
 
-
-
-
-$primary:       $squirrel;
+$primary:       $thunder;
 $secondary:     $default;
-$success:       $fruit_salad;
-$info:          $limed_spruce;
-$warning:       $golden_grass;
+$success:       $goblin;
+$info:          $woodsmoke;
+$warning:       $hot-toddy;
 $danger:        $pomegranate;
 
 
 // Import Bootstrap and its default variables
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/bootstrap/scss/bootstrap';

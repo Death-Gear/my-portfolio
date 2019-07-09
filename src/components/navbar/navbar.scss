@@ -1,34 +1,31 @@
-#navbarWrapper {
+@import "../../../src/custom.scss";
+
+#navBar {
   width: 100%;
   transition: background-color 1s ease 0s;
   z-index: 100;
 
   @media (max-width: 768px) {
-    background: #91857C;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background: $primary;
+    box-shadow: $box-shadow;
+  }
+}
+
+.nav-item {
+  padding: 0 .5rem;
+
+  @media (max-width: 992px) {
+    padding: 0 .25rem;
   }
 
-  .navbar {
-    width: 100%;
-    background: none;
+  @media (max-width: 768px) {
+    padding: 0;
   }
 
-  .nav-item {
-    padding: 0 .5rem;
-    
-    @media (max-width: 992px) {
-      padding: 0 .25rem;
-    }
-
+  .nav-link {
+    font-weight: bold;
     @media (max-width: 768px) {
-      padding: 0;
-    }
-
-    .nav-link {
-      font-weight: bold;
-      @media (max-width: 768px) {
-        font-weight: normal;
-      }
+      font-weight: normal;
     }
   }
 }

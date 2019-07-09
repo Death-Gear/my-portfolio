@@ -1,20 +1,18 @@
 #overviewWrapper {
+  .masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('./overview.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-  #profile_pic{
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
+    @media (max-width: 768px) {
+      background-image: url('./overview_md.jpg');
+    }
 
-  #profile_content {
-    width: 100%;
-    margin-top: 5rem;
-
-  }
-
-  @media (max-width: 768px) {
-    #profile_pic {
-      margin-top: 3rem;
+    @media (max-width: 576px) {
+      background-image: url("./overview_sm.jpg");
     }
   }
 }

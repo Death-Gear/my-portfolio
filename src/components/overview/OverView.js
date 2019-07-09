@@ -1,65 +1,37 @@
-import $ from "jquery";
 import "textillate";
 import React from 'react';
 import './overview.css';
-import profile_pic from './avatar.jpg'
 
 class OverView extends React.Component {
 
     componentDidMount() {
-        $('#hello').textillate({
-            loop: true,
-            in: {
-                effect: 'fadeInLeft',
-                sync: 'true'
-            },
 
-            out: {
-                effect: 'fadeOutRight',
-                sync: 'true',
-            }
-        });
-
-        $('#intro').textillate({
-            loop: true,
-            in: {
-                effect: 'fadeInLeft',
-                sync: 'true'
-            },
-
-            out: {
-                effect: 'fadeOutRight',
-                sync: 'true'
-            }
-        });
-
-        $('#designation').textillate({
-            loop: true,
-            in: {
-                effect: 'fadeInLeft',
-                sync: 'true'
-            },
-
-            out: {
-                effect: 'fadeOutRight',
-                sync: 'true'
-            }
-        });
     }
 
     render() {
         return (
-            <div className="container-fluid" id="overviewWrapper">
-                <div className="row bg-primary">
-                    <div className="col-md-4 col-sm-12 shadow" id="profile_content">
-
-                        <h2 className="text-white" id="hello">Hello</h2>
-                        <h2 className="text-white" id="intro">I am Yeasir Afsar</h2>
-                        <h2 className="text-white" id="designation">Software Engineer</h2>
-
+            <div className="container-fluid p-0" id="overviewWrapper">
+                <header className="masthead">
+                    <div className="container h-100">
+                        <div className="row h-100 align-items-center">
+                            <div className="col-12 text-center">
+                                <h1 className="font-weight-light text-heathered-gray">Get Amazing Things Done !!!</h1>
+                                <p className="lead text-white">Hi, I am Yeasir Afsar. I am a Software Engineer from Dhaka, Bangladesh. I love Web and Game Development</p>
+                                <button type="button" className="btn btn-success btn-lg px-5 mx-2">Hire Me !!!</button>
+                                <button type="button" className="btn btn-indigo btn-lg px-5 mx-2">Get My CV</button>
+                            </div>
+                        </div>
                     </div>
-                    <img src={profile_pic} className="col-md-8 col-sm-12 img-fluid shadow " id="profile_pic"/>
-                </div>
+                </header>
+
+                <section className="py-5">
+                    <div className="container">
+                        <h2 className="font-weight-light">Page Content</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem
+                            nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione
+                            cumque magnam enim fugiat reprehenderit expedita.</p>
+                    </div>
+                </section>
             </div>
         )
     }
