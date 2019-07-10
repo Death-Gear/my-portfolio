@@ -1,18 +1,27 @@
-#overviewWrapper {
-  .masthead {
-    height: 100vh;
-    min-height: 500px;
-    background-image: url('./overview.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+@import "../../custom.scss";
 
-    @media (max-width: 768px) {
-      background-image: url('./overview_md.jpg');
-    }
 
-    @media (max-width: 576px) {
-      background-image: url("./overview_sm.jpg");
-    }
+.masthead {
+
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('./overview.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include media-breakpoint-down(sm) {
+    background-image: url("overview_sm.jpg");
+    height: 70vh;
   }
+
+  @include media-breakpoint-down(xs) {
+    background-image: url("overview_xs.jpg");
+    height: 50vh;
+  }
+
+  button {
+    border-radius: 40px;
+  }
+
 }

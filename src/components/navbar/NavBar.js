@@ -1,6 +1,7 @@
 import React from 'react';
 import './navbar.css';
 import $ from "jquery";
+import logo from "./logo.png"
 
 class NavBar extends React.Component {
     componentDidMount() {
@@ -19,7 +20,9 @@ class NavBar extends React.Component {
         return (
             <div id="navBarWrapper">
                 <nav className="navbar fixed-top navbar-expand-md navbar-dark" id="navBar">
-                    <a className="navbar-brand text-white" href="#">PORTFOLIO LOGO</a>
+                    <a className="navbar-brand" href="#">
+                        <img src={logo} width="200" height="40" alt=""/>
+                    </a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
                             aria-label="Toggle navigation">

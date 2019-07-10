@@ -1,4 +1,7 @@
 // Override default variables before the import
+
+//colors
+
 $thunder: #160b0f;
 $mid-gray: #69686c;
 $shuttle-gray: #556575;
@@ -44,6 +47,11 @@ $success:       $goblin;
 $info:          $woodsmoke;
 $warning:       $hot-toddy;
 $danger:        $pomegranate;
+
+$enable-responsive-font-sizes: true;
+
+//typography
+$rfs-base-font-size: 1rem;
 
 
 // Import Bootstrap and its default variables
